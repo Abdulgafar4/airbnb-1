@@ -45,7 +45,7 @@ function Header({ placeholder }) {
     key: "selection",
   };
   return (
-    <header className="sticky top-0 z-50 grid grid-cols-3  bg-white shadow-md py-5 px-5 md:px-10">
+    <header className="sticky top-0 z-50 grid grid-cols-3  bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500  shadow-md py-3 px-5 md:px-10">
       {/*left*/}
       <div
         onClick={() => router.push("/")}
@@ -65,19 +65,21 @@ function Header({ placeholder }) {
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
           className="flex-grow pl-5 bg-transparent outline-none
-          text-sm text-gray-600 placeholder-gray-400"
+          text-sm text-white placeholder-white"
           type="text"
           placeholder={placeholder || "Start your search"}
         />
-        <SearchIcon className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2" />
+        <SearchIcon className="hidden md:inline-flex h-8 bg-yellow-500  text-white rounded-full p-2 cursor-pointer md:mx-2" />
       </div>
       {/*right*/}
-      <div className="flex items-center space-x-4 justify-end text-gray-500">
-        <p className="hidden md:inline cursor-pointer">Become a host</p>
+      <div className="flex items-center space-x-4 justify-end text-gray-700">
+        <p className="hidden md:inline cursor-pointer hover:underline ">
+          Become a host
+        </p>
         <GlobeAltIcon className="h-6 cursor-pointer" />
         <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
-          <MenuIcon className="h-6" />
-          <UserCircleIcon className="h-6" />
+          <MenuIcon className="h-6 cursor-pointer" />
+          <UserCircleIcon className="h-6 cursor-pointer animate-bounce" />
         </div>
       </div>
       {searchInput && (
@@ -89,10 +91,10 @@ function Header({ placeholder }) {
             onChange={handleSelect}
           />
           <div className="flex items-center border-b mb-4">
-            <h2 className="text-2xl flex-grow font-semibold">
+            <h2 className="text-2xl flex-grow font-semibold text-white">
               Number of Guests
             </h2>
-            <UsersIcon className="h-5" />
+            <UsersIcon className="h-5 text-white" />
             <input
               value={noOfGuests}
               onChange={(e) => setNoOfGuests(e.target.value)}
@@ -101,11 +103,18 @@ function Header({ placeholder }) {
               className="w-12 pl-2 text-lg outline-none text-red-400"
             />
           </div>
-          <div className="flex">
-            <button onClick={resetInput} className="flex-grow text-gray-500">
+          <div className="flex space-x-10">
+            <button
+              onClick={resetInput}
+              className="flex-grow text-white font-semibold border-2 px-8 py-3 rounded-full hover:underline"
+            >
               Cancel
             </button>
-            <button onClick={search} className="flex-grow text-red-400">
+
+            <button
+              onClick={search}
+              className="flex-grow text-white font-semibold border-2 px-8 py-3 rounded-full hover:underline"
+            >
               Search
             </button>
           </div>
