@@ -11,6 +11,7 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
 import { useRouter } from "next/dist/client/router";
+import logo from "../public/logo.png";
 
 function Header({ placeholder }) {
   const [searchInput, setSearchInput] = useState("");
@@ -45,14 +46,14 @@ function Header({ placeholder }) {
     key: "selection",
   };
   return (
-    <header className="sticky top-0 z-50 grid grid-cols-3  bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500  shadow-md py-3 px-5 md:px-10">
+    <header className="sticky top-0 z-50 grid grid-cols-3  bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500  shadow-md py-3 px-5 md:px-10 ">
       {/*left*/}
       <div
         onClick={() => router.push("/")}
         className="relative flex items-center h-10 cursor-pointer my-auto"
       >
         <Image
-          src="https://links.papareact.com/qd3"
+          src={logo}
           layout="fill"
           objectFit="contain"
           objectPosition="left"
@@ -106,14 +107,14 @@ function Header({ placeholder }) {
           <div className="flex space-x-10">
             <button
               onClick={resetInput}
-              className="flex-grow text-white font-semibold border-2 px-8 py-3 rounded-full hover:underline"
+              className="flex-grow text-white font-semibold border-2 px-8 py-3 rounded-full hover:underline bg-gray-700"
             >
               Cancel
             </button>
 
             <button
               onClick={search}
-              className="flex-grow text-white font-semibold border-2 px-8 py-3 rounded-full hover:underline"
+              className="flex-grow text-white font-semibold border-2 px-8 py-3 rounded-full hover:underline bg-yellow-500 "
             >
               Search
             </button>
