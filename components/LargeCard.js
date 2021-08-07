@@ -5,7 +5,7 @@ import go from "../public/go.jpg";
 
 function LargeCard({ img, title, description, buttonText }) {
   return (
-    <section className="relative py-16 cursor-pointer ">
+    <section className="relative py-16 cursor-pointer hover:scale-105 transform transition duration-300 ease-out">
       <div className="relative h-96 min-w-[300px]">
         <Image
           src={go}
