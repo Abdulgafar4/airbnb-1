@@ -27,7 +27,7 @@ function Banner() {
         </button>
       </div>
       <div className="absolute bottom-0 right-0 h-16 w-16 ">
-        <ArrowCircleDownIcon className="h-9 animate-bounce text-white cursor-pointer" />
+        <ArrowCircleDownIcon className="h-9 animate-bounce text-white cursor-pointer " />
       </div>
     </div>
   );

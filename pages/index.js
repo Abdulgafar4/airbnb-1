@@ -5,6 +5,7 @@ import SmallCard from "../components/SmallCard";
 import MediumCard from "../components/MediumCard";
 import LargeCard from "../components/LargeCard";
 import Footer from "../components/Footer";
+import FooterSection from "../components/FooterSection";
 
 export default function Home({ exploreData, cardData }) {
   return (
@@ -47,6 +48,7 @@ export default function Home({ exploreData, cardData }) {
         />
       </main>
       <Footer />
+      <FooterSection />
     </div>
   );
 }
