@@ -22,7 +22,7 @@ function LargeCard({ img, title, description, buttonText }) {
         <p>{description}</p>
         <button
           className="text-white bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 px-8 py-3 shadow-md rounded-full font-bold my-4  hover:shadow-xl active:scale-90 transition duration-150 hover:underline "
-          onClick={() => router.push("/moreInfo")}
+          onClick={() => router.push("/explore")}
         >
           Let`s go!
         </button>
