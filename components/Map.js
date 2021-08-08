@@ -2,6 +2,8 @@ import React from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import { useState } from "react";
 import { getCenter } from "geolib";
+import { LocationMarkerIcon } from "@heroicons/react/solid";
+import Image from "next/image";
 
 function Map({ searchResults }) {
   const [selectedLocation, setSelectedLocation] = useState({});
@@ -40,7 +42,8 @@ function Map({ searchResults }) {
               className="cursor-pointer text-2xl animate-bounce"
               aria-label="push-pin"
             >
-              🚀
+              <LocationMarkerIcon className="h-16 cursor-pointer  " />
+              <Image src={result.img} layout="fill" className="rounded-lg" />
             </p>
           </Marker>
           {/* The popup that should show if we click on a Marker */}
