@@ -6,14 +6,16 @@ import MediumCard from "../components/MediumCard";
 import LargeCard from "../components/LargeCard";
 import Footer from "../components/Footer";
 import FooterSection from "../components/FooterSection";
-import headLogo from "../public/headLogo.png";
 
 export default function Home({ exploreData, cardData }) {
   return (
     <div className="">
       <Head>
         <title>Airbnb</title>
-        <link rel="icon" href={headLogo} />
+        <link
+          rel="icon"
+          href="https://mpng.subpng.com/20181125/vyx/kisspng-portable-network-graphics-logo-airbnb-computer-ico-velvetamsterdam-com-visit-us-5bfa3d3c0f23d0.827717901543126332062.jpg"
+        />
       </Head>
 
       <Header />
