@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 import {
   GlobeAltIcon,
   PhoneIcon,
@@ -28,7 +28,7 @@ function FooterSection() {
           English (UK)
         </p>
         <p className="hidden md:inline font-bold cursor-pointer underline ">
-          £ (GRB)
+          £ (GRP)
         </p>
         {/* <div className="flex items-center space-x-2  p-2 rounded-full">
           <PhoneIcon className="h-6 cursor-pointer" />
