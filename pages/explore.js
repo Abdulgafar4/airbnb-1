@@ -40,7 +40,7 @@ function explore() {
             </button>
           </div>
         </section>
-        <section className="relative py-16 cursor-pointer hover:scale-105 transform transition duration-300 ease-out ">
+        <section className="relative py-2 cursor-pointer hover:scale-105 transform transition duration-300 ease-out ">
           <div className="relative h-96 min-w-[300px]">
             <Image
               src={one}
@@ -65,7 +65,7 @@ function explore() {
             </button>
           </div>
         </section>
-        <section className="relative py-16 cursor-pointer hover:scale-105 transform transition duration-300 ease-out ">
+        <section className="relative py-2 cursor-pointer hover:scale-105 transform transition duration-300 ease-out ">
           <div className="relative h-96 min-w-[300px]">
             <Image
               src={two}
@@ -90,7 +90,7 @@ function explore() {
             </button>
           </div>
         </section>
-        <section className="relative py-16 cursor-pointer hover:scale-105 transform transition duration-300 ease-out ">
+        <section className="relative py-2 cursor-pointer hover:scale-105 transform transition duration-300 ease-out ">
           <div className="relative h-96 min-w-[300px]">
             <Image
               src={tree}
@@ -115,7 +115,7 @@ function explore() {
             </button>
           </div>
         </section>
-        <section className="relative py-16 cursor-pointer hover:scale-105 transform transition duration-300 ease-out ">
+        <section className="relative py-2 cursor-pointer hover:scale-105 transform transition duration-300 ease-out ">
           <div className="relative h-96 min-w-[300px]">
             <Image
               src={five}
