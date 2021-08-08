@@ -14,7 +14,7 @@ export default function Home({ exploreData, cardData }) {
         <title>Airbnb</title>
         <link
           rel="icon"
-          href="https://mpng.subpng.com/20181125/vyx/kisspng-portable-network-graphics-logo-airbnb-computer-ico-velvetamsterdam-com-visit-us-5bfa3d3c0f23d0.827717901543126332062.jpg"
+          href="https://www.citypng.com/public/uploads/preview/-31600818291pprglzii1f.png"
         />
       </Head>
 
