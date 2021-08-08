@@ -7,13 +7,13 @@ import { useRouter } from "next/dist/client/router";
 function Banner() {
   const router = useRouter();
   return (
-    <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[840px]">
+    <div className="relative h-[330px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[840px]">
       <Image src={bannerPic} layout="fill" objectFit="cover" />
       <div
         className=" absolute top-1/4 w-auto ml-10 h-auto p-4 bg-white/20 backdrop-blur-md rounded"
         objectPosition="left"
       >
-        <p className="text-2xl md:text-4xl lg:text-7xl text-white ">
+        <p className="text-2xl md:text-3xl lg:text-7xl text-white ">
           Olympian &{" "}
         </p>
         <p className="text-2xl sm:text-3xl lg:text-7xl   text-white">
