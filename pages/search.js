@@ -18,7 +18,10 @@ function Search({ searchResults }) {
     <div>
       <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`} />
       <main className="flex">
-        <section className="flex-grow pt-14 px-6">
+        <section
+          className="flex-grow pt-14 px-6"
+          onClick={() => router.push("/moreInfo")}
+        >
           <p className="text-xs">
             300+ Stays - {range} - for {noOfGuests} guests
           </p>

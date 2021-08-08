@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { getOverlappingDaysInIntervals } from "date-fns";
+
 import go from "../public/go.jpg";
 
 function LargeCard({ img, title, description, buttonText }) {
