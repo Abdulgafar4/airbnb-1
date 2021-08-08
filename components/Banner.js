@@ -2,8 +2,10 @@ import React from "react";
 import Image from "next/image";
 import bannerPic from "../public/header.jpg";
 import { ArrowCircleDownIcon } from "@heroicons/react/solid";
+import { useRouter } from "next/dist/client/router";
 
 function Banner() {
+  const router = useRouter();
   return (
     <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[840px]">
       <Image src={bannerPic} layout="fill" objectFit="cover" />
@@ -22,7 +24,10 @@ function Banner() {
           {" "}
           Expiriences{" "}
         </p>
-        <button className="text-white bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 px-8 py-3 shadow-md rounded-full font-bold my-4  hover:shadow-xl active:scale-90 transition duration-150 hover:underline ">
+        <button
+          className="text-white bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 px-8 py-3 shadow-md rounded-full font-bold my-4  hover:shadow-xl active:scale-90 transition duration-150 hover:underline "
+          onClick={() => router.push("/moreInfo")}
+        >
           Explore now
         </button>
       </div>
